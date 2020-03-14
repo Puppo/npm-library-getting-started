@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lib:build": "ng build ldp-library",
-    "lib:test": "ng test ldp-library",
+    "lib:test": "ng test ldp-library --watch=false",
     "lib:publish": "npm publish dist/ldp-library",
     "doc:generate": "compodoc -p projects/ldp-library/tsconfig.lib.json",
     "doc:serve": "lite-server --baseDir=\"documentation\"",
