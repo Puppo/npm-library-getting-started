@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib:build": "ng build ldp-library"
+    "lib:build": "ng build ldp-library",
+    "lib:publish": "npm publish dist/ldp-library"
   },
   "private": true,
   "dependencies": {
