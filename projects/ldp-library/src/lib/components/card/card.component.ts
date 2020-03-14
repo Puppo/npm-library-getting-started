@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { UtilsService } from '../../services/utils.service';
 
 /**
  * Simple Card
@@ -10,6 +11,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
       <div class="title">{{ title }}<div>
       <div class="description" *ngIf="opened">
         <ng-content></ng-content>
+        <hr />
+        {{ utils.title }}
       </div>
     </div>
   `,
@@ -35,5 +38,9 @@ export class CardComponent {
    * Click of the tile bar
    */
   @Output() toggle = new EventEmitter<void>();
+
+  constructor(
+    public utils: UtilsService
+  ) {}
 
 }
