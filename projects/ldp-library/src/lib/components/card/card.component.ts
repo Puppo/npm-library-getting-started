@@ -8,7 +8,7 @@ import { UtilsService } from '../../services/utils.service';
   selector: 'ldp-card',
   template: `
     <div class="card">
-      <div class="title">{{ title }}<div>
+      <div class="title" (click)="toggle.emit()">{{ title }}<div>
       <div class="description" *ngIf="opened">
         <ng-content></ng-content>
         <hr />

@@ -12,7 +12,8 @@
     "lib:publish": "npm publish dist/ldp-library",
     "doc:generate": "compodoc -p projects/ldp-library/tsconfig.lib.json",
     "doc:serve": "lite-server --baseDir=\"documentation\"",
-    "doc": "npm run doc:generate && npm run doc:serve"
+    "doc": "npm run doc:generate && npm run doc:serve",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "private": true,
   "dependencies": {
@@ -34,10 +35,14 @@
     "@angular/cli": "~8.1.0",
     "@angular/compiler-cli": "~8.1.0",
     "@angular/language-service": "~8.1.0",
+    "@babel/core": "^7.8.7",
     "@compodoc/compodoc": "^1.1.11",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/angular": "^5.3.17",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "babel-loader": "^8.0.6",
     "codelyzer": "^5.0.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
